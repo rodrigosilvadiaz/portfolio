@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  position: relative;
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  height: 260px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.background_image_otlas {
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/img/Otlas.png"); /* Cambia 'tu-imagen-de-fondo.jpg' por la ruta de tu imagen */
+  background-size: cover;
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.background_image_blog {
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/img/Blog.png"); /* Cambia 'tu-imagen-de-fondo.jpg' por la ruta de tu imagen */
+  background-size: cover;
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.background_image_otlas:hover {
+  opacity: 0.5;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/img/GameHub-game.png"); /* Cambia 'tu-imagen-de-fondo.jpg' por la ruta de tu imagen */
+  background-size: cover;
+  opacity: 0.15;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.background-image:hover {
+  opacity: 0.5;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  color: white;
+}
+
+.content h5 {
+  font-family: "Abel", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  font-size: 1.5em;
+  margin: 0;
+}
+.content p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-social__item svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+  margin: auto;
+}
+
+.card_container {
+  width: 560px;
+}
+
+.card-info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/*Image*/
+
+/*Card footer*/
+.card-social {
+  transform: translateY(300%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  border-radius: 0 0 5px 5px;
+}
+
+.card-social__item {
+  list-style: none;
+}
+
+.card-social__item svg {
+  display: block;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.card-social__item span {
+  font-size: 0.5em;
+}
+
+/*Text*/
+.card-title {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.card-subtitle {
+  height: 50px;
+  color: #b2c8d4;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+}
+
+/*Hover*/
+.card:hover {
+  scale: 1.01;
+}
+
+.card:hover .card-info {
+  transform: translateY(-5%);
+}
+
+.card:hover .card-social {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.card-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.card-avatar:hover {
+  transform: scale(1.1);
+}

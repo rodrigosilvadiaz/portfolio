@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home_container {
+  position: relative;
+  display: flex;
+  background: rgb(6, 6, 62);
+  background: linear-gradient(
+    132deg,
+    rgba(6, 6, 62, 1) 0%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(46, 17, 87, 1) 100%
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Left content */
+.left_subcontainer {
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+.info_container {
+  width: 500px;
+  height: 80vh;
+  margin: auto;
+  padding-top: 90px;
+  margin-left: 28%;
+  padding-left: 20px;
+}
+.info_top {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.img_container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid black;
+}
+.img_container img {
+  width: 100%;
+}
+.info_profile {
+  width: 100%;
+  height: 150px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info_profile h2 {
+  font-family: "Abel", sans-serif;
+  font-size: 3.4em;
+  padding-left: 20px;
+  color: white;
+  cursor: pointer;
+}
+.info_profile h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3em;
+  padding-left: 20px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.info_profile p {
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  padding-left: 20px;
+  color: #aaaaaa;
+}
+.indice {
+  width: 100%;
+  height: 350px;
+}
+.info_center {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.info_center span {
+  padding-left: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  cursor: pointer;
+  color: #aaaaaa;
+}
+.tecnologies {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: end;
+  padding-left: 20px;
+}
+.tecnologies svg {
+  margin-right: 20px;
+  opacity: 0.7;
+}
+
+.tecnologies svg:hover {
+  opacity: 1;
+}
+
+/* Right content */
+.right_subcontainer {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  overflow: scroll;
+}
+.content_container {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro {
+  width: 80%;
+  padding: 20px 20px;
+  margin-top: 70px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.final_paragraph {
+  padding-bottom: 50px;
+  border-bottom: 1px #aaaaaa solid;
+}
+.projects {
+  width: 100%;
+  height: 1000px;
+  padding: 20px 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project_card {
+  width: 98%;
+  height: 265px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card_image {
+  position: absolute;
+  margin: 30px;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+.card_image:hover {
+  opacity: 1;
+}
+.card_image img {
+  width: 100%;
+  border-radius: 5px;
+  z-index: 3;
+  border: 1px solid rgb(98, 98, 126);
+}
+.content_card {
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_card {
+  display: flex;
+  font-size: 2em;
+  font-family: "Abel", sans-serif;
+  color: white;
+  height: 35%;
+  align-items: center;
+}
+.title_svg {
+  align-items: end;
+  display: flex;
+  padding-left: 5px;
+  scale: 0.7;
+}
+.tec_card svg:hover {
+  scale: 1.1;
+}
+.paragraph_card {
+  font-size: 0.9em;
+  font-family: "Abel", sans-serif;
+  color: #b0b1e0;
+  height: 35%;
+}
+.tecnologies_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90.5%;
+  height: 28%;
+  background-color: #5555553d;
+  border-top: 1px solid rgba(122, 122, 122, 0.336);
+  border-radius: 0 0 5px 5px;
+}
+.project_content {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.blog_left {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+}
+.project_tecnologies {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: end;
+}
+.blog_right {
+  width: 55%;
+  height: 80%;
+  background-color: #aaaaaa;
+}
+.intro {
+  color: white;
+}
+.tec_card {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Abel", sans-serif;
+  color: white;
+  justify-content: end;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tec_card p {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 0.7em;
+}
+
+.card_container {
+  width: 560px;
+  height: 260px;
+}
+
+/* ------Querys------- */
+
+@media (max-width: 960px) {
+  .home_container {
+    display: block;
+  }
+  .left_subcontainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  .right_subcontainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: none;
+  }
+  .info_container {
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .info_top {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info_profile {
+    width: 80%;
+    height: 150px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info_profile h2 {
+    font-family: "Abel", sans-serif;
+    font-size: 3.2em;
+    padding-left: 20px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .info_profile h3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.1em;
+    padding-left: 20px;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  .info_profile p {
+    width: 90%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.8em;
+    padding-left: 20px;
+    color: #aaaaaa;
+
+    display: flex;
+    justify-content: start;
+  }
+  .info_center {
+    width: 80%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    margin: auto;
+  }
+  .info_center span {
+    padding-left: 50px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1em;
+    cursor: pointer;
+    color: #aaaaaa;
+  }
+  .tecnologies {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: end;
+    padding-left: 20px;
+    justify-content: center;
+  }
+  .tecnologies svg {
+    margin-right: 20px;
+    opacity: 0.7;
+  }
+
+  .content_container {
+    width: 100%;
+  }
+  .intro {
+    width: 80%;
+    padding: 20px 20px;
+    margin-top: 70px;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .final_paragraph {
+    padding-bottom: 50px;
+    border-bottom: 1px #aaaaaa solid;
+  }
+  .projects {
+    width: 80%;
+    height: 1000px;
+    padding: 20px 20px;
+    margin-top: 20px;
+  }
+  .project_card {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(1px);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .project_content {
+    width: 30%;
+    height: 80%;
+    background-color: rgb(55, 0, 255);
+    display: flex;
+    flex-direction: column;
+  }
+  .blog_left {
+    width: 100%;
+    height: 130px;
+    background-color: aqua;
+    overflow: hidden;
+  }
+  .project_tecnologies {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: end;
+  }
+  .blog_right {
+    width: 55%;
+    height: 80%;
+    background-color: #aaaaaa;
+  }
+  .intro {
+    color: white;
+  }
+}

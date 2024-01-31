@@ -1,0 +1,204 @@
+@media (max-width: 575px) {
+  #hero {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #navbarContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #postBlogsSection {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #newsSection {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+#buttonBuy {
+  background-color: #ff6833;
+}
+
+#principalLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#divButtons {
+  display: flex;
+}
+
+#buttonLeft {
+  background-color: #ff6833;
+  padding: 10px;
+  color: white;
+}
+
+#buttonLeft:hover {
+  background-color: white;
+  color: #ff6833;
+}
+
+#buttonRight {
+  background-color: #ffa382;
+  color: #ff6833;
+  padding: 10px;
+}
+
+#buttonRight:hover {
+  background-color: white;
+  color: #ff6833;
+}
+
+#imagePrincipal {
+  height: 100%;
+  width: 100%;
+}
+
+#hero {
+  position: relative;
+}
+
+#hero::after {
+  content: "";
+  background-image: url(images/curveGray.svg);
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#centralText {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#centralText-1 {
+  background-color: #ff6833;
+  margin-top: 30px;
+  padding: 5px 10px;
+}
+
+#centralText-3 {
+  margin: 0px 15%;
+  color: gray;
+}
+
+#tabContainer {
+  background-color: #f5f5f5;
+}
+
+#imagesTab {
+  width: 200px;
+  height: 150px;
+}
+
+#descriptionTab {
+  color: gray;
+}
+
+#itemsTab {
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-delay: 0.5;
+}
+
+#itemsTab:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+#itemsProfilePosts {
+  display: flex;
+  align-items: center;
+}
+
+#postBlogsSection {
+  background-color: #f5f5f5;
+}
+#postBlogsCols {
+  padding-bottom: 50px;
+}
+#descriptionBlogSection {
+  color: gray;
+}
+
+#divImagePosts {
+  height: 30vh;
+  width: 100%;
+}
+
+#imagePosts {
+  width: 100%;
+  height: 100%;
+}
+
+#imageProfilePosts {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+#timeDescription {
+  color: gray;
+  font-size: 0.85rem;
+}
+
+#newsSection {
+  position: relative;
+  background-color: #f5f5f5;
+  z-index: 1;
+}
+
+#newsSection::before {
+  content: "";
+  background-image: url(images/curveBlack.svg);
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#inputContainer {
+  width: 100%;
+  justify-content: center;
+  height: 35px;
+}
+
+#inputText {
+  width: 100%;
+}
+
+#mailButton {
+  background-color: #ff6833;
+}
+
+#descriptionImput {
+  font-size: 0.85rem;
+}
+
+#ts {
+  font-size: 0.85rem;
+}
+
+#footerBootom {
+  width: 100%;
+}
+
+#socialMediaImg {
+  width: 15px;
+  margin-right: 5px;
+}
