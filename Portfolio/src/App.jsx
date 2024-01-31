@@ -6,7 +6,7 @@ import Blog from "./components/Blog";
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/card" element={<Card />} />
     </Routes>
